@@ -46,7 +46,7 @@ a {
     position: relative;
     display: flex;
     gap: 30%;
-    padding: 10% 15% 10% 15%;
+    padding: 7.5% 15%;
     justify-content: center;
     margin-bottom: 55px;
 }
@@ -263,7 +263,7 @@ hr {
 .facts__title {
     margin-bottom: 32px;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 60px;
 }
 
 .social-network-handle-container {
@@ -330,8 +330,10 @@ hr {
 
 .single-image-container {
     padding-bottom: 75%;
+    padding-top: 10%;
     background-size: contain;
-    background-position: center top;
+    background-color: white;
+    background-position: center center;
     background-repeat: no-repeat;
     border-radius: 12px;
     overflow: hidden;
