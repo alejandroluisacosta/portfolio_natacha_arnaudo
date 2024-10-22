@@ -1,2 +1,2 @@
-# portfolio
-Portfolio website featuring my main projects and an interesting UI 
+# portfolio_natacha_arnaudo
+Portfolio website for professional Makeup Artist Natacha Arnaudo
