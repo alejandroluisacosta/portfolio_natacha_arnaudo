@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Natacha Arnaudo</title>
+    <link rel="icon" type="image/x-icon" href="./assets/logo.jpeg">
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script>
+        window.addEventListener('scroll', function() {
+            const portfolio = document.querySelector('.portfolio');
+            if (window.scrollY > 0) {
+                portfolio.style.opacity = '1';
+                portfolio.style.transition = 'opacity 3.5s';
+            } else {
+                portfolio.style.opacity = '0.05';
+            }
+        });
+    </script>
+    <script>
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        const viewportHeight = window.innerHeight;
+        const line1 = document.querySelector('.line--1');
+        const line2 = document.querySelector('.line--2');
+        
+        line1.style.transform = `translateX(-${Math.min(scrollY, viewportHeight)}px)`;
+        line2.style.transform = `translateX(${Math.min(scrollY, viewportHeight)}px)`;
+    
+        if (scrollY > 0 && window.innerWidth > 1000) {
+            line1.classList.add('hidden-hr');
+            line2.classList.add('hidden-hr');
+        } else {
+            line1.classList.remove('hidden-hr');
+            line2.classList.remove('hidden-hr');
+        }
+    });
+    </script>
+</head>
+<body>
+    <div class="above-the-fold-container">
+        <hr class="line--1">
+        <div class="welcome-container">
+            <h1 class="welcome"><span class="reveal">Natacha Arnaudo</span></h1>
+            <p>Beauty Content Creator</p>
+            <div class="languages">
+                <img class="flag flag--selected button" id="english" src="./assets/usa.png" alt="U.S.A flag">
+                <img class="flag" id="spanish" src="./assets/spain.png" alt="Spain flag">
+            </div>
+            <p class="personal-description english-text">I’m Alejandro Acosta, a junior full-stack developer based in Madrid, Spain. I’m currently working on large-scale projects in the hotel sector, and pride myself on being a resolutive, curious, and proactive professional constantly looking to improve both my hard and soft skills.</p>
+            <p class="personal-description spanish-text hidden-text">Soy Alejandro Acosta, desarrollador full-stack junior ubicado en Madrid, España. Actualmente trabajo en proyectos de gran envergadura en el sector hotelero, y me enorgullezco de ser un profesional resolutivo, curioso y proactivo que busca constantemente mejorar tanto mis habilidades técnicas como interpersonales.</p>
+            <a href="#portfolio"><div class="go-to-portfolio-container">
+                <p class="go-to-portfolio">Portfolio</p>
+                <span class="arrow material-symbols-outlined">
+                    arrow_downward
+                </span>
+            </div></a>
+        </div>
+        <div class="person-container">
+            <div class="personal-image" style="background-image: url('./assets/Naty.jpg');"></div>
+            <div class="icons-container">
+                <a href="https://github.com/alejandroluisacosta" target="_blank"><img class="icon" src="./assets/tiktok.svg"/></a>
+                <a href="https://www.linkedin.com/in/alejandroluisacosta" target="_blank"><img class="icon" src="./assets/Instagram.svg"/></a>
+            </div>
+        </div>
+        <hr class="line--2">
+    </div>
+    <div class="portfolio" id="portfolio">
+        <h2 class="projects-title english-text">My Work</h2>
+        <h2 class="projects-title spanish-text hidden-text">Proyectos</h2>
+        <div class="projects-container">
+            <div class="project">
+                <video autoplay playsinline muted loop>
+                    <source src="./assets/video1.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="project">
+                <video autoplay playsinline muted loop>
+                    <source src="./assets/video1.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="project">
+                <video autoplay playsinline muted loop>
+                    <source src="./assets/video1.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+    <div class="facts">
+        <div class="facts__instagram">
+            <h2 class="facts__title">Instagram Insights</h2>
+            <div class="social-network-handle-container">
+                <img class="icon--small" src="./assets/Instagram.svg"/>
+                <p class="handle">@natacharnaudo</p>
+            </div>
+            <div class="social-network-facts social-network-facts--instagram" id="facts">
+                <div class="fact">
+                    <img class="icon" src="./assets/followers.svg"/>
+                    <p class="title">Followers</p>
+                    <p class="followers">+55k</p>
+                </div>
+                <div class="fact">
+                    <img class="icon" src="./assets/female.svg"/>
+                    <p class="title">Gender</p>
+                    <div class="single-image-container" style="background-image: url('./assets/gender.jpeg');"></div>
+                </div>
+                <div class="fact">
+                    <img class="icon" src="./assets/calendar.svg"/>
+                    <p class="title">Age</p>
+                    <div class="single-image-container" style="background-image: url('./assets/ages.jpeg');"></div>
+                </div>
+                <div class="fact">
+                    <img class="icon" src="./assets/location.svg"/>
+                    <p class="title">Location</p>
+                    <div class="single-image-container" style="background-image: url('./assets/locations.jpeg');"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="facts__separation"></div> -->
+        <div class="facts__tiktok">
+            <h2 class="facts__title">TikTok Insights</h2>
+            <div class="social-network-handle-container">
+                <img class="icon--small" src="./assets/tiktok.svg"/>
+                <p class="handle">@natacharnaudo</p>
+            </div>
+            <div class="social-network-facts social-network-facts--instagram" id="facts">
+                <div class="fact">
+                    <img class="icon" src="./assets/followers.svg"/>
+                    <p class="title">Followers</p>
+                    <p class="followers">+23k</p>
+                </div>
+                <div class="fact">
+                    <img class="icon" src="./assets/female.svg"/>
+                    <p class="title">Gender</p>
+                    <div class="single-image-container" style="background-image: url('./assets/gender.jpeg');"></div>
+                </div>
+                <div class="fact">
+                    <img class="icon" src="./assets/calendar.svg"/>
+                    <p class="title">Age</p>
+                    <div class="single-image-container" style="background-image: url('./assets/ages.jpeg');"></div>
+                </div>
+                <div class="fact">
+                    <img class="icon" src="./assets/location.svg"/>
+                    <p class="title">Location</p>
+                    <div class="single-image-container" style="background-image: url('./assets/locations.jpeg');"></div>
+                </div>
+            </div>
+        </div>
+        <section class="contact">
+            <div class="contact__text">
+                <h2 class="title">Contact</h2>
+                <hr>
+                <p class="description">Want to create with me? Email me at natacharnaudo@gmail.com for a creative talk!</p>
+                <a class="send-email">Send email</a>
+            </div>
+            <div class="image single-image-container" style="background-image: url('./assets/contact-image.webp');"></div>
+        </section>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const englishText = document.querySelectorAll('.english-text');
+            const spanishText = document.querySelectorAll('.spanish-text');
+            const englishFlag = document.getElementById('english');
+            const spanishFlag = document.getElementById('spanish');
+            const cv = document.getElementById('cv');
+
+            englishFlag.addEventListener('click', function() {
+                spanishText.forEach(el => el.classList.add('hidden-text'));
+                englishText.forEach(el => el.classList.remove('hidden-text'));
+                cv.href = './assets/Resume_Alejandro_Acosta.pdf';
+                englishFlag.classList.toggle('flag--selected', true);
+                spanishFlag.classList.toggle('flag--selected', false);
+            });
+
+            spanishFlag.addEventListener('click', function() {
+                englishText.forEach(el => el.classList.add('hidden-text'));
+                spanishText.forEach(el => el.classList.remove('hidden-text'));
+                cv.href = './assets/CV_Alejandro_Acosta.pdf';
+                spanishFlag.classList.toggle('flag--selected', true);
+                englishFlag.classList.toggle('flag--selected', false);
+            });
+        });
+    </script>
+    <script>
+        const viewportHeight = window.innerHeight;
+
+        window.addEventListener('scroll', () => {
+            const welcome = document.querySelector('.welcome-container');
+            const person = document.querySelector('.person-container');
+            const scrollY = window.scrollY;
+
+                welcome.style.transform = `translateX(-${Math.min(scrollY, viewportHeight)}px)`;
+                person.style.transform = `translateX(${Math.min(scrollY, viewportHeight)}px)`;
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.querySelector('.welcome').classList.add('visible');
+            }, 0);
+        });
+    </script>
+    <script>
+        const facts = document.querySelectorAll('.fact');
+        const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            entry.target.style.transform = 'scale(1)';
+            } else {
+            entry.target.style.transform = 'scale(0.3)';
+            }
+            entry.target.style.transition = 'transform 0.5s ease';
+            });
+        });
+        facts.forEach(fact => observer.observe(fact));        
+    </script>
+</body>
+</html>
