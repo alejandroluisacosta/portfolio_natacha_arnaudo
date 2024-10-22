@@ -234,15 +234,6 @@ hr {
     -webkit-text-fill-color: transparent;
 }
 
-.project {
-    position: relative;
-    text-align: center;
-    border-radius: 8px;
-    color: white;
-    transition: color 1s, background-color 1s;
-    border: 2px solid blue;
-}
-
 
 .social-networks-container {
     display: flex;
