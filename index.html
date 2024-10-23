@@ -98,7 +98,7 @@
             <h2 class="facts__title">Instagram Insights</h2>
             <div class="social-network-handle-container">
                 <img class="icon--small" src="./assets/Instagram.svg"/>
-                <p class="handle">@natacharnaudo</p>
+                <a href="https://www.instagram.com/natacharnaudo/" target="_blank"><p class="handle">@natacharnaudo</p></a>
             </div>
             <div class="social-network-facts social-network-facts--instagram" id="facts">
                 <div class="fact">
@@ -123,12 +123,11 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="facts__separation"></div> -->
         <div class="facts__tiktok">
             <h2 class="facts__title">TikTok Insights</h2>
             <div class="social-network-handle-container">
                 <img class="icon--small" src="./assets/tiktok.svg"/>
-                <p class="handle">@natacharnaudo</p>
+                <a href="https://www.tiktok.com/@natacharnaudo" target="_blank"><p class="handle">@natacharnaudo</p></a>
             </div>
             <div class="social-network-facts social-network-facts--instagram" id="facts">
                 <div class="fact">
@@ -169,12 +168,10 @@
             const spanishText = document.querySelectorAll('.spanish-text');
             const englishFlag = document.getElementById('english');
             const spanishFlag = document.getElementById('spanish');
-            const cv = document.getElementById('cv');
 
             englishFlag.addEventListener('click', function() {
                 spanishText.forEach(el => el.classList.add('hidden-text'));
                 englishText.forEach(el => el.classList.remove('hidden-text'));
-                cv.href = './assets/Resume_Alejandro_Acosta.pdf';
                 englishFlag.classList.toggle('flag--selected', true);
                 spanishFlag.classList.toggle('flag--selected', false);
             });
@@ -182,7 +179,6 @@
             spanishFlag.addEventListener('click', function() {
                 englishText.forEach(el => el.classList.add('hidden-text'));
                 spanishText.forEach(el => el.classList.remove('hidden-text'));
-                cv.href = './assets/CV_Alejandro_Acosta.pdf';
                 spanishFlag.classList.toggle('flag--selected', true);
                 englishFlag.classList.toggle('flag--selected', false);
             });
