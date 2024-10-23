@@ -40,6 +40,7 @@ a {
     opacity: 0;
     max-height: 0;
     margin: 0 !important;
+    display: none;
 }
 
 .above-the-fold-container {
@@ -137,11 +138,6 @@ hr {
 .person-container {
 }
 
-.personal-description {
-    background: linear-gradient(to left, #395181, black);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 .go-to-portfolio-container {
     display: flex;
@@ -215,19 +211,18 @@ hr {
     text-align: center;
     background: #F9F5F2;
     padding-top: 45px;
-    padding-bottom: 30px;
+    padding: 7.5% 15% 10%;
 }
 
-.projects-container {
+.portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
-    padding: 0 15% 15%;
     gap: 10%;
 }
 
-.projects-title {
-    font-size: 90px;
+.portfolio-title {
+    font-size: 70px;
     font-weight: 400;
     background: black;
     -webkit-background-clip: text;
@@ -385,7 +380,7 @@ button:hover {
 .contact {
     display: flex;
     align-items: center;
-    padding: 10%;
+    padding: 5% 10%;
 }
 
 .contact__text {
@@ -408,12 +403,8 @@ button:hover {
 }
 
 .contact .description {
-    width: 70%;
+    width: 75%;
     margin-left: auto;
-}
-
-.contact .button {
-
 }
 
 .contact .image {
@@ -441,9 +432,9 @@ button:hover {
 }
 
 @media only screen and (max-width: 1000px) {
-    body {
+    /* body {
         min-width: unset;
-    }
+    } */
 
     hr {
         width: 35%;
@@ -488,51 +479,16 @@ button:hover {
         justify-content: space-around;
     }
 
-    .projects-container {
+    .portfolio-container {
         display: block;
     }
-    .projects-title {
+    .portfolio-title {
         font-size: 50px;
         margin-bottom: 80px;
     }
 
-    .projects-container {
+    .portfolio-container {
         padding: 0 10% 15%;
     }
 
-    .project {
-        margin-bottom: 90px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .project-name, .project-description {
-        margin-bottom: 20px;
-    }
-
-    .project:hover {
-        background-color: unset;
-    }
-
-    .tech-container {
-        flex-wrap: wrap;
-        position: unset;
-        flex-direction: row;
-        opacity: 1;
-        transition: unset;
-        gap: 7.5%;
-        justify-content: center;
-        margin-bottom: 5px;
-        padding-top: unset;
-    }
-    .tech-icon {
-        width: 35px;
-    }
-    .tech-icon-container--sql {
-        display: block;
-    }
-
-    .buttons-container {
-        gap: 15%;
-    }
 }
