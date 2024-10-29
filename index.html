@@ -72,25 +72,35 @@
     <div class="portfolio" id="portfolio">
         <h2 class="portfolio-title english-text">My Work</h2>
         <h2 class="portfolio-title spanish-text hidden-text">Mi Trabajo</h2>
-        <div class="portfolio-container">
-            <div class="project">
-                <video autoplay playsinline muted loop>
-                    <source src="./assets/video1.mov" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+        <div class="portfolio-container swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <video autoplay playsinline muted loop>
+                        <source src="./assets/video1.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <video autoplay playsinline muted loop>
+                        <source src="./assets/video2.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <video autoplay playsinline muted loop>
+                        <source src="./assets/video3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <video autoplay playsinline muted loop>
+                        <source src="./assets/video4.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
-            <div class="project">
-                <video autoplay playsinline muted loop>
-                    <source src="./assets/video1.mov" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="project">
-                <video autoplay playsinline muted loop>
-                    <source src="./assets/video1.mov" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+            <button class="swiper-button-prev"></button>
+            <button class="swiper-button-next"></button>
         </div>
     </div>
     <div class="facts">
@@ -228,5 +238,27 @@
         });
         facts.forEach(fact => observer.observe(fact));        
     </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 60,
+            pagination: {
+            el: '.swiper-pagination',
+            },
+        
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        
+            scrollbar: {
+            el: '.swiper-scrollbar',
+            },
+        });
+    </script>    
 </body>
 </html>

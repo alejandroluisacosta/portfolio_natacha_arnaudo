@@ -201,16 +201,12 @@ hr {
     gap: 15%;
 }
 
-.spanish-cv {
-    display: none;
-}
-
 .portfolio {
     opacity: 0.05;
     text-align: center;
     background: #F9F5F2;
     padding-top: 45px;
-    padding: 7.5% 15% 10%;
+    padding: 7.5% 10% 10%;
 }
 
 .portfolio-container {
@@ -228,6 +224,26 @@ hr {
     -webkit-text-fill-color: transparent;
 }
 
+.swiper {
+    padding: 0 5% !important;
+} 
+
+.swiper-wrapper {
+    margin-bottom: 40px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: #EDDAD3;
+}
+
+.swiper-button-prev {
+    transform: translate(-7.5%, 0);
+}
+
+.swiper-button-next {
+    transform: translate(7.5%, 0);
+}
 
 .social-networks-container {
     display: flex;
@@ -354,17 +370,15 @@ video {
 
 button {
     cursor: pointer;
-    border-radius: 32px;
-    padding: 5px 30px;
-    border: 0;
+    padding: 30px 30px;
     background-color: #faf4f2;
-    color: black;
-    transition: color 0.75s ease, background-color 0.75s ease;
+    color: black !important;
+    transition: color 0.4s ease, background-color 0.75s ease;
 }
 
 button:hover {
-    color: white;
-    background-color: #395181;
+    color: rgb(255, 240, 240) !important;
+    background-color: rgb(136, 135, 135);
 }
 
 .contact-information {
