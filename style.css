@@ -205,7 +205,7 @@ hr {
     text-align: center;
     background: #F9F5F2;
     padding-top: 45px;
-    padding: 7.5% 10% 10%;
+    padding: 50px 10%;
 }
 
 .portfolio-container {
@@ -216,11 +216,13 @@ hr {
 }
 
 .portfolio-title {
-    font-size: 70px;
+    font-size: 30px;
     font-weight: 400;
-    background: black;
+    background: #9e9999;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 50px;
+    font-family: "Open Sans";
 }
 
 .swiper {
