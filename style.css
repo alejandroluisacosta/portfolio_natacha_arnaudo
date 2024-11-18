@@ -417,6 +417,7 @@ button:hover {
 .contact .description {
     width: 75%;
     margin-left: auto;
+    margin-bottom: 38px;
 }
 
 .contact .image {
@@ -427,7 +428,9 @@ button:hover {
 .send-email {
     font-weight: 300;
     font-size: 24px;
-    text-decoration: underline;
+    background-color: #EDDAD3;
+    padding: 8px 20px;
+    border-radius: 8px;
 }
 @media only screen and (min-width: 1920px) {
     body {
@@ -543,5 +546,28 @@ button:hover {
 
     .followers {
         margin-bottom: 0;
+    }
+    
+    .contact {
+        display: block;
+        padding: 20% 10%;
+    }
+
+    .contact__text {
+        text-align: center;
+    }
+    
+    .contact .description {
+        margin: 0 auto 30px;
+        min-width: 255px;
+    }
+
+    .contact hr {
+        margin-right: auto;
+    }
+
+    .contact .image {
+        margin-top: 50px;
+        border-radius: 8px;
     }
 }
