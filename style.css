@@ -449,16 +449,16 @@ button:hover {
     }
 
     .line--1 {
-        top: 1%;
+        top: 3%;
     }
 
     .line--2 {
-        bottom: -2%;
+        bottom: 0;
     }
 
     .above-the-fold-container {
         display: block;
-        padding: 10% 10%;
+        padding: 20% 10%;
     }
 
     .welcome-container {
@@ -469,10 +469,33 @@ button:hover {
         font-size: 60px;
     }
 
+    .personal-description {
+        margin-bottom: 24px;
+    }
+
+    .go-to-portfolio-container {
+        display: inline-block;
+        background-color: #EDDAD3;
+        padding: 8px 20px;
+        border-radius: 8px;
+    }
+
+    .go-to-portfolio {
+        background: none;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
+        color: black;
+    }
+
+    .arrow {
+        display: none !important;
+    }
+
     .person-container {
         transform: unset;
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
     }
 
     .personal-image {
@@ -480,11 +503,7 @@ button:hover {
     }
 
     .icons-container {
-        margin-left: 50%;
-        transform: translate(-50%, 0);
-        margin-bottom: 50px;
         display: flex;
-        justify-content: space-around;
     }
 
     .portfolio-title {
