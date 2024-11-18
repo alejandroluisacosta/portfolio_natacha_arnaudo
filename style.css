@@ -5,7 +5,6 @@ html {
 }
 
 body {
-    min-width: 1440px;
     margin: 0;
     overflow-x: hidden;
 }
@@ -445,10 +444,6 @@ button:hover {
 }
 
 @media only screen and (max-width: 1000px) {
-    /* body {
-        min-width: unset;
-    } */
-
     hr {
         width: 35%;
     }
@@ -492,16 +487,21 @@ button:hover {
         justify-content: space-around;
     }
 
-    .portfolio-container {
-        display: block;
-    }
     .portfolio-title {
         font-size: 50px;
-        margin-bottom: 80px;
+        margin-bottom: 55px;
     }
 
-    .portfolio-container {
-        padding: 0 10% 15%;
+    video {
+        margin-bottom: 25px;
     }
 
+    .swiper {
+        padding: unset !important;
+    }
+
+    .swiper-button-next, 
+    .swiper-button-prev {
+        display: none !important;
+    }
 }
