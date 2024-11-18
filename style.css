@@ -523,4 +523,25 @@ button:hover {
     .swiper-button-prev {
         display: none !important;
     }
+    
+    .facts__instagram,
+    .facts__tiktok {
+        padding-top: 25%;
+    }
+
+    .social-network-facts {
+        display: block;
+    }
+    
+    .social-network-facts > .fact {
+        margin-bottom: 80px;
+    }
+
+    .social-network-facts > :nth-child(1) {
+        margin-bottom: 55px;
+    }
+
+    .followers {
+        margin-bottom: 0;
+    }
 }
