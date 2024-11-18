@@ -143,6 +143,13 @@ hr {
     gap: 10px;
     opacity: 0;
     animation: pulsar 1s ease 1.7s forwards;
+    background-color: #EDDAD3;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: 
+    background-color 1s ease,
+    color 0.1s ease;
 }
 
 @keyframes pulsar {
@@ -150,33 +157,16 @@ hr {
     100% { opacity: 1; }
 }
 
-.go-to-portfolio-container:hover .arrow {
-    opacity: 1;
-}
-
 .go-to-portfolio {
     font-size: 28px;
-    background: linear-gradient(to right, #395181, black);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline;
     transition: 300ms;
     border-bottom: 1px solid transparent;
     margin-bottom: 0;
 }
 
-.arrow {
-    animation: pulsar 1s ease 2.7s forwards;
-}
-
-.go-to-portfolio:hover {
-    border-color: #395181;
-    text-decoration: underline;
-}
-
-.arrow {
-    opacity: 0;
-    transition: opacity 0.3s ease;
+.go-to-portfolio-container:hover {
+    background-color: #395181;
+    color: white;
 }
 
 .person-container {
@@ -474,13 +464,6 @@ button:hover {
 
     .personal-description {
         margin-bottom: 24px;
-    }
-
-    .go-to-portfolio-container {
-        display: inline-block;
-        background-color: #EDDAD3;
-        padding: 8px 20px;
-        border-radius: 8px;
     }
 
     .go-to-portfolio {
