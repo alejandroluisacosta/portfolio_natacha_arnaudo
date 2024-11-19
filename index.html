@@ -230,14 +230,16 @@
     <script>
         const viewportHeight = window.innerHeight;
 
-        window.addEventListener('scroll', () => {
-            const welcome = document.querySelector('.welcome-container');
-            const person = document.querySelector('.person-container');
-            const scrollY = window.scrollY;
-
-                welcome.style.transform = `translateX(-${Math.min(scrollY, viewportHeight)}px)`;
-                person.style.transform = `translateX(${Math.min(scrollY, viewportHeight)}px)`;
-        });
+        if (window.innerWidth < 1000) {
+            window.addEventListener('scroll', () => {
+                const welcome = document.querySelector('.welcome-container');
+                const person = document.querySelector('.person-container');
+                const scrollY = window.scrollY;
+    
+                    welcome.style.transform = `translateX(-${Math.min(scrollY, viewportHeight)}px)`;
+                    person.style.transform = `translateX(${Math.min(scrollY, viewportHeight)}px)`;
+            });
+        }
     </script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
