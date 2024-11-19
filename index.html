@@ -229,8 +229,8 @@
     </script>
     <script>
         const viewportHeight = window.innerHeight;
-
-        if (window.innerWidth < 1000) {
+        
+        if (window.innerWidth > 1000) {
             window.addEventListener('scroll', () => {
                 const welcome = document.querySelector('.welcome-container');
                 const person = document.querySelector('.person-container');
